@@ -1,0 +1,32 @@
+{
+  "name": "@cromarmot/pagination",
+  "version": "0.0.1",
+  "description": "smart pagination",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CroMarmot/pagination.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "pagination",
+    "page"
+  ],
+  "bugs": {
+    "url": "https://github.com/CroMarmot/pagination/issues"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://github.com/CroMarmot/pagination",
+  "author": "CroMarmot <yexiaorain@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.1.1",
+    "typescript": "^4.0.2"
+  }
+}
