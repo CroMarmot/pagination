@@ -1,6 +1,6 @@
 {
   "name": "@cromarmot/pagination",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "smart pagination",
   "main": "dist/index.js",
   "repository": {
@@ -38,13 +38,13 @@
     "typescript": "^4.0.2"
   },
   "husky": {
-      "hooks": {
-          "pre-commit": "lint-staged"
-      }
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-      "*.{js,ts,tsx}": [
-          "eslint --fix"
-      ]
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }
