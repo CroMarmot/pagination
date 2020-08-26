@@ -6,6 +6,8 @@ use pagination 1 2 4 8 16... right now !
 
 # Online Demo
 
+https://jvgcv.csb.app/
+
 https://codesandbox.io/s/paginationdemo-jvgcv?file=/src/App.vue
 
 ## Install
@@ -20,7 +22,11 @@ const pm = new Pagination();
 
 console.log(pm.setRange(1, 1000, 1));
 
-console.log(pm.setRangeCurrent(1, 100, 50));
+console.log(pm.setRangeCurrent(50));
+
+console.log(pm.setArray(['hey','hello','what','hi','test'],0));
+
+console.log(pm.setArrayIndex(4));
 ```
 
 ## APIs
@@ -39,9 +45,7 @@ console.log(pm.setRangeCurrent(1, 100, 50));
 
 `yarn test`
 
-# Examples/Demo
+# Examples
 
 https://atcoder.jp/ranking
-
-
 
