@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "types": "dist/index.d.ts",
   "keywords": [
@@ -26,7 +27,24 @@
   "author": "CroMarmot <yexiaorain@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "@typescript-eslint/parser": "^3.10.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "mocha": "^8.1.1",
+    "prettier": "^2.1.0",
     "typescript": "^4.0.2"
+  },
+  "husky": {
+      "hooks": {
+          "pre-commit": "lint-staged"
+      }
+  },
+  "lint-staged": {
+      "*.{js,ts,tsx}": [
+          "eslint --fix"
+      ]
   }
 }
