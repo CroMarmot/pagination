@@ -1,7 +1,7 @@
 "use strict";
-let expect = require("chai").expect;
 
-const { Pagination } = require("../dist/index.js");
+import { expect } from "chai";
+import { Pagination } from "../dist/index.js";
 
 describe("default", () => {
   const pm = new Pagination();
